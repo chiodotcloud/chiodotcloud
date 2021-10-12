@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    
+    background: rgb(255,180,180);
+background: linear-gradient(270deg, rgba(255,180,180,1) 0%, rgba(255,0,99,1) 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.landing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
