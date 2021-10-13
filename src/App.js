@@ -18,7 +18,7 @@ function App() {
   return (
     <Layout  style={{ minHeight: "100vh" }} className="layout">
       <Content style={{padding: '0 50px', display: 'flex', width: '100%', alignItems:'center'}}>
-        <Tabs tabPosition="left" style={{width: '100%', alignItems: 'center'}} activeKey={selectedIndex} size="large" defaultActiveKey={1} onChange={e => setSelectedIndex(e)}>
+        <Tabs tabPosition="right" style={{width: '100%', alignItems: 'center'}} activeKey={selectedIndex} size="large" defaultActiveKey={1} onChange={e => setSelectedIndex(e)}>
           <TabPane  tab={<span>
             <HomeOutlined/>
             Home
