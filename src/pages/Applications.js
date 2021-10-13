@@ -1,31 +1,41 @@
-import { Card, Col, Row, Alert } from 'antd';
+import { Card, Col, Row, Alert, Badge } from 'antd';
 import '../css/Applications.css'
+import image from '../assets/chio.png'
+const {Meta} = Card;
 function Applications(){
     return(
-        <div>
-<div className="site-card-wrapper">
-    <Row gutter={16}>
-      <Col style={{padding: 20}} span={8}>
-      <Card  hoverable  cover={<img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmlydHVhbCUyMGFzc2lzdGFudHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" />} title="Chio Music" bordered={false}>
-          Our new concept is an interactive audio player, which uses a 2D-grid to display all choices of music.
-          <Alert style={{margin: '10px 0px 0px 0px'}} type="warning" message="Work-in-progress" />
+        <div style={{height: '100%'}}>
+    <Row wrap style={{width: '100%', height: '100%'}} justify="center" align="middle" gutter={30}>
+      <Col style={{padding: 20, minWidth: 300}} span={6}>
+        <Badge.Ribbon text="To be created" placement="end">
+      <Card style={{height: 500}}  cover={<img src={image} />} >
+        <Meta title="Chio Music" description={<>An interactive music client. <br /> More info at: <a href="https://music.chio.cloud">Chio Music</a> </>} />
         </Card>
+        </Badge.Ribbon>
       </Col>
-      <Col style={{padding: 20}} span={8}>
-      <Card  hoverable  cover={<img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmlydHVhbCUyMGFzc2lzdGFudHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" />} title="Chio Management" bordered={false}>
-          A calendar and management tool with loads of in-built macros to help you in your daily life.
-          <Alert style={{margin: '10px 0px 0px 0px'}} type="warning" message="Work-in-progress" />
+      <Col style={{padding: 20, minWidth: 300}} span={6}>
+        <Badge.Ribbon text="To be created" placement="end">
+              <Card style={{height: 500}} cover={<img src={image} />} >
+          <Meta title="Chio Management"  description={<>A management tool for private people and businesses. <br/>More info at: <a href="https://management.chio.cloud">Chio Management</a> </>} />
         </Card>
+        </Badge.Ribbon>
       </Col>
-      <Col style={{padding: 20}} span={8}>
-        <Card  hoverable  cover={<img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmlydHVhbCUyMGFzc2lzdGFudHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" />} title="Chio Assistant" bordered={false}>
-          A flexible assistant suited for your needs.
-          <Alert style={{margin: '10px 0px 0px 0px'}} type="warning" message="Our assistant won't be released for public until early 2022" />
+      <Col style={{padding: 20, minWidth: 300}} span={6}>
+        <Badge.Ribbon text="To be created" placement="end">
+        <Card style={{height: 500}} cover={<img src={image} />}>
+          <Meta title="Chio Assistant" description={<>A smart assistant using a neural network. <br/> More info at: <a href="https://management.chio.cloud">Chio Assistant</a> </>} />
         </Card>
-      
+        </Badge.Ribbon>
       </Col>
+      <Col style={{padding: 20, minWidth: 300}} span={6}>
+        <Badge.Ribbon text="To be created" placement="end">
+      <Card style={{height: 500}} cover={<img src={image} />} >
+        <Meta title="Chio Music" description={<>An interactive music client. <br /> More info at: <a href="https://music.chio.cloud">Chio Music</a> </>} />
+        </Card>
+        </Badge.Ribbon>
+      </Col>
+     
     </Row>
-  </div>
         </div>
     )
 }

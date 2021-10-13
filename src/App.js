@@ -2,13 +2,14 @@ import './App.less';
 import 'antd/dist/antd.less';
 import {Typography, Button} from 'antd';
 import Typewriter from 'typewriter-effect'
-import { LoginOutlined } from '@ant-design/icons';
+import { LoginOutlined, LogoutOutlined } from '@ant-design/icons';
 import './css/Landing.css'
 import { Layout, Menu, Tabs} from 'antd';
 import {HomeOutlined, AppstoreOutlined} from '@ant-design/icons'
 import { magenta } from '@ant-design/colors';
 import { useState } from 'react';
 import Applications from './pages/Applications';
+import logo from './assets/chioalpha.png';
 const { Header, Content, Footer } = Layout;
 const {TabPane} = Tabs;
 const {Title} = Typography;
@@ -16,8 +17,8 @@ function App() {
   const [selectedIndex, setSelectedIndex] = useState("1");
   return (
     <Layout  style={{ minHeight: "100vh" }} className="layout">
-      <Content style={{padding: '0 50px'}}>
-        <Tabs activeKey={selectedIndex} size="large" defaultActiveKey={1} onChange={e => setSelectedIndex(e)}>
+      <Content style={{padding: '0 50px', display: 'flex', width: '100%', alignItems:'center'}}>
+        <Tabs tabPosition="left" style={{width: '100%', alignItems: 'center'}} activeKey={selectedIndex} size="large" defaultActiveKey={1} onChange={e => setSelectedIndex(e)}>
           <TabPane  tab={<span>
             <HomeOutlined/>
             Home
